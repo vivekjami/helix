@@ -1,0 +1,5 @@
+[build]
+rustflags = ["-C", "target-cpu=native"]
+
+[alias]
+lint = "clippy --workspace -- -D warnings -D clippy::pedantic -A clippy::module_name_repetitions"

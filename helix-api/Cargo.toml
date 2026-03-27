@@ -1,0 +1,7 @@
+[package]
+name = "helix-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Dependencies will be added automatically in Phase 2 using workspace.dependencies
