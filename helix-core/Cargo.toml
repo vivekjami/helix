@@ -1,7 +1,19 @@
 [package]
 name = "helix-core"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+description = "Core engine for Helix near-duplicate detection (SimHash + LSH + Redis freshness)"
 
 [dependencies]
-# Dependencies will be added automatically in Phase 2 using workspace.dependencies
+# Workspace dependencies
+thiserror = { workspace = true }
+smallvec = { workspace = true }
+parking_lot = { workspace = true }
+xxhash-rust = { workspace = true, features = ["xxh32", "xxh64"] }
+sha2 = { workspace = true }
+hex = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+redis = { workspace = true }
+deadpool-redis = { workspace = true }
+tokio = { workspace = true }   # required for async Redis operations

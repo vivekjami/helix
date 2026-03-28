@@ -26,6 +26,8 @@ xxhash-rust    = { version = "0.8", features = ["xxh32"] }
 smallvec       = { version = "1", features = ["union"] }
 parking_lot    = { version = "0.12" }
 rayon          = { version = "1" }
+hex = "0.4.3"
+
 
 # Error handling
 thiserror      = { version = "2.0.18" }
